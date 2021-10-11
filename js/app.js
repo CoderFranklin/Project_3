@@ -161,6 +161,7 @@ let cardApp = (data) => {
         </span>
     <span class="card__icon-title">${item.service}</span>`;
     cardSocials.append(tempNode);
+    console.log(tempNode)
   });
 };
 cardApp(data);
