@@ -24,7 +24,7 @@ let data = {
       id: "gl",
       service: "Google",
       url: "http://www.google.com/jsmith24",
-      icon: "fab fa-dribbble",
+      icon: "fab fa-google",
     },
   ],
 };
@@ -115,7 +115,7 @@ let cardApp = (data) => {
     }
     .card__icon--fb{
         color: #2c5eff;
-        border: 1px solid #2c5eff'
+        border: 1px solid #2c5eff;
     }
     .card__icon--fb:hover{
         background: #2c5eff;
@@ -123,7 +123,7 @@ let cardApp = (data) => {
     }
     .card__icon--ig{
         color: #773fe7;
-        border: 1px solid #773fe7'
+        border: 1px solid #773fe7;
     }
     .card__icon--ig:hover{
         background: #773fe7;
@@ -131,12 +131,20 @@ let cardApp = (data) => {
     }
     .card__icon--db{
         color: #f962b1;
-        border: 1px solid #f962b1'
+        border: 1px solid #f962b1;
     }
     .card__icon--db:hover{
         background: #f962b1;
         color: white;
     }
+    .card__icon--gl{
+      color: #4285F4;
+      border: 1px solid #4285F4;
+  }
+  .card__icon--gl:hover{
+      background: #0F9D58;
+      color: white;
+  }
     `;
   body.prepend(root); //before the card
   root.classList.add("root");
