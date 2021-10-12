@@ -35,7 +35,7 @@ let cardApp = (data) => {
     card = document.createElement("section");
   let html = `
     <div class="card__wrapper">
-                    <img src="img/userME.jpg" class="card__user-img">
+                    <img src="img/user_ME.jpg" class="card__user-img">
                     <div class="card__info">
                         <span class="card__name">${data.fullName}</span>
                         <span class="card__title">${data.position}</span>
