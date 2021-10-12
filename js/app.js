@@ -1,29 +1,29 @@
 let data = {
-  fullName: "Joe Smith",
-  position: "UI/UX Designer",
+  fullName: "Doug Franklin",
+  position: "Software Developer",
   socials: [
     {
       id: "fb",
       service: "Facebook",
-      url: "http://www.facebook.com/jsmith24",
+      url: "http://www.facebook.com/",
       icon: "fab fa-facebook-f",
     },
     {
       id: "ig",
       service: "Instagram",
-      url: "http://www.instagram.com/jsmith24",
+      url: "http://www.instagram.com/",
       icon: "fab fa-instagram",
     },
     {
       id: "db",
       service: "Dribbble",
-      url: "http://www.dribbble.com/jsmith24",
+      url: "http://www.dribbble.com/",
       icon: "fab fa-dribbble",
     },
     {
       id: "gl",
       service: "Google",
-      url: "http://www.google.com/jsmith24",
+      url: "http://www.google.com/",
       icon: "fab fa-google",
     },
   ],
@@ -167,9 +167,9 @@ let cardApp = (data) => {
         <span class="card__icon-box">
             <i class="${item.icon}"></i>
         </span>
-    <span class="card__icon-title">${item.service}</span>`;
+    <span class="card__icon-title" style="cursor:pointer;" onclick="document.location='${item.url}'">${item.service}</span>`;
     cardSocials.append(tempNode);
-    console.log(tempNode)
+    console.log(item.url)
   });
 };
 cardApp(data);
